@@ -1,0 +1,76 @@
+
+    <!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Diseño de Páginas Web &#8902; Tecnómata</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- seo-->
+	<meta name="description" content="Crearemos un sitio web que se convertirá en tu principal herramienta comercial para atraer nuevos clientes. Mas de 100 proyectos realizados." />
+	<link rel="canonical" href="{{ url_for('home') }}" />
+	<meta property="og:locale" content="es_MX" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Diseño de Páginas Web &#8902; Tecnómata" />
+	<meta property="og:description" content="Crearemos un sitio web que se convertirá en tu principal herramienta comercial para atraer nuevos clientes. Mas de 100 proyectos realizados." />
+	<meta property="og:url" content="{{ url_for('home') }}" />
+	<meta property="og:site_name" content="Tecnómata" />
+	<meta property="article:modified_time" content="2024-09-17T16:53:28+00:00" />
+	<meta property="og:image" content="{{ url_for('static', filename='/static/img/forshare.jpg') }}" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="680" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"../","url":"../","name":"Diseño de Sitios Web &#8902; Tecnómata","isPartOf":{"@id":"../#website"},"about":{"@id":"../#organization"},"datePublished":"2024-06-28T07:52:54+00:00","dateModified":"2024-09-17T16:53:28+00:00","description":"Crearemos un sitio web visualmente atractivo, pero que ademas, capturara nuevos clientes para tu negocio.","breadcrumb":{"@id":"../#breadcrumb"},"inLanguage":"es-MX","potentialAction":[{"@type":"ReadAction","target":["../"]}]},{"@type":"BreadcrumbList","@id":"../#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"pagina de inicio"}]},{"@type":"WebSite","@id":"../#website","url":"../","name":"Tecnómata","description":"Crearemos un sitio web atractivo y sobre todo, funcional, que atraera y capturara nuevos clientes para tu negocio. Tenemos mas de 100 proyectos terminados, creeme, sabemos que lo hacemos.","publisher":{"@id":"../#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"../?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es-MX"},{"@type":"Organization","@id":"../#organization","name":"Tecnómata","alternateName":"Tecnomata","url":"../","logo":{"@type":"ImageObject","inLanguage":"es-MX","@id":"../#/schema/logo/image/","url":"/static/img/favicon.png","contentUrl":"/static/img/favicon.png","width":180,"height":180,"caption":"Tecnómata"},"image":{"@id":"../#/schema/logo/image/"},"sameAs":["https://www.instagram.com/tecnomatadigital","https://www.youtube.com/@tecnomata","https://twitter.com/tecnomataD","https://www.tiktok.com/@tecnomatad"]}]}</script>
+	<!-- SEO  -->
+
+
+<link rel='stylesheet' id='main-style-css' href="{{ url_for('static', filename='css/main.min.css') }}" type='text/css' media='all' />
+<link rel='shortlink' href="{{ url_for('home') }}" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="{{ url_for('static', filename='js/embed.json') }}" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="{{ url_for('static', filename='js/embed1.xml') }}" />
+<link rel="icon" href="{{ url_for('static', filename='img/cropped-favicon-32x32-tec.png') }}" sizes="32x32" />
+<link rel="icon" href="{{ url_for('static', filename='img/cropped-favicon-192x192-tec.png') }}" sizes="192x192" />
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/cropped-favicon-180x180-tec.png') }}" />
+<meta name="msapplication-TileImage" content="{{ url_for('static', filename='img/cropped-favicon-270x270-tec.png') }}" />
+		
+</head>
+<body>
+    <div class="wrapper wrapper-main">
+    <div class="preloader">
+    <img src="{{ url_for('static', filename='img/logo-icon-tec.png') }}" alt="Tecnómata" class="logo-icon">
+    <div class="preloader-bg">
+        <div class="preloader-line preloader-line-mob"></div>
+        <div class="preloader-line preloader-line-mob"></div>
+        <div class="preloader-line preloader-line-mob"></div>
+        <div class="preloader-line preloader-line-mob"></div>
+        <div class="preloader-line preloader-line-mob"></div>
+        <div class="preloader-line"></div>
+        <div class="preloader-line"></div>
+        <div class="preloader-line"></div>
+        <div class="preloader-line"></div>
+        <div class="preloader-line"></div>
+    </div>
+</div>
+    <main class="main">
+{% include "components/header.html" %}    
+{% include "components/modalvideoyfirst.html" %}
+{% include "components/tecnologias.html" %}                        
+{% include "components/ventajas.html" %}                        
+{% include "components/sectioncases.html" %}                        
+{% include "components/videoypdf.html" %}                        
+{% include "components/paquetes.html" %}                        
+    <!-- {% include "components/adicional.html" %}  -->
+{% include "components/contactos.html" %}    
+{% include "components/media.html" %}    
+{% include "components/footer.html" %}
+</main>
+{% include "components/modal-menu.html" %}
+{% include "components/form.html" %}
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.min.js') }}" id="main-script-js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/form-handler.js') }}"></script>
+</body>
+</html>

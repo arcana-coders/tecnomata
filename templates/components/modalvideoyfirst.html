@@ -1,0 +1,53 @@
+<div class="modal modal-video">
+    <div class="modal-bg"></div>
+    <button class="modal-close" aria-label="Close form">
+        <svg>
+            <image href="{{ url_for('static', filename='img/close.svg') }}" width="30px" height="30px" />
+        </svg>
+    </button>
+    <div class="modal-video-content">
+                    <iframe id="videoIframe" data-src="#" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+</div>            <section class="first" id="first">
+                <div class="container">
+                                        <div class="first-media-wrapper">
+                                                    <video playsinline autoplay loop="loop" muted>
+                                <source src="{{ url_for('static', filename='img/websites-promo-tec.mp4') }}" type="video/mp4">
+                            </video>
+                                            </div>
+                    <div class="first-top">
+                        <div class="first-left">
+                            <h1 class="first-title">
+                            <span class="first-title-line">
+                                <span class="title-extraLarge">diseñamos</span>
+                                <button class="first-title-icon" aria-label="Showreel" data-action="showreel">
+                                    <svg>
+                                        <image href="{{ url_for('static', filename='img/play.svg') }}" width="15px" height="15px" />
+                                    </svg>
+                                </button>
+                            </span>
+                                <span class="first-title-line">
+                                <span class="title-extraLarge">sitios web</span>
+                                <span class="first-title-desc">llevamos nuevos <br>clientes <br> a tu negocio</span>
+                            </span>
+                            </h1>
+                        </div>
+
+                                                    <div class="first-right">
+                                                                    <div class="first-right-item">dominio</div>
+                                                                    <div class="first-right-item">hosting</div>
+                                                                    <div class="first-right-item">diseño sitio web</div>
+                                                                    <div class="first-right-item">email personalizado</div>
+                                                                    <div class="first-right-item">google my business</div>
+                                                                    <div class="first-right-item">marketing digital</div>
+                                                                    <div class="first-right-item">campañas anuncios</div>
+                                                            </div>
+                        
+                    </div>
+                    <div class="ready">
+    <div class="ready-number">
+        <span class="ready-number-current">100</span><span class="blue">+</span>
+    </div>
+    <div class="desc">proyectos terminados</div>
+</div>                </div>
+            </section>

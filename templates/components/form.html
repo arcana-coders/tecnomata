@@ -1,0 +1,49 @@
+<div class="modal modal-form">
+    <div class="modal-bg"></div>
+    <button class="modal-close" aria-label="Close form">
+        <svg>
+            <image href="{{ url_for('static', filename='img/close.svg') }}" width="30px" height="30px" />
+        </svg>
+    </button>
+    <div class="modal-content">
+        <div class="modal-title">
+            hablar no cuesta        </div>
+        <div class="modal-desc">
+            Dime como ponerme en contacto        </div>
+        <form class="formSend" action="/send_form" method="post">
+            <label class="form-label">
+                escribe tu nombre:                <input type="text" name="name" id="name" placeholder="tu nombre" required class="formSend__input">
+            </label>
+            <div class="form-label">
+                elige un método de contacto:                <div class="form-method">                    
+                    <button class="button active" type="button" data-input-name="text" data-placeholder="número de teléfono">
+                        <svg>
+                            <image href="{{ url_for('static', filename='img/whatsapp.svg') }}" width="20px" height="20px" />
+                        </svg>
+                        <span>Whatsapp</span>
+                    </button>
+                    <button class="button" type="button" data-input-name="email" data-placeholder="escribe tu e-mail">
+                        <svg>
+                            <image href="{{ url_for('static', filename='img/mail.svg') }}" width="20px" height="20px" />
+                        </svg>
+                        <span>E-mail</span>
+                    </button>
+                </div>
+                <input type="hidden" name="contactMethod" id="contactMethod" value="WhatsApp">
+                <input type="hidden" name="selectedPack" id="selectedPack" value="paquete">
+            </div>
+            <label class="form-label">
+                <input type="text" name="phone" id="contactPlaceholder" placeholder="escribe tu teléfono" required class="formSend__input">
+                <input type="hidden" name="contactInfo" id="contactInfo">
+            </label>
+            <button aria-label="discuss the project" type="submit" value="submit" class="button button-yellow button-submit">
+                <span>enviar información</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                    <path d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z" />
+                    <path d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z" />
+                </svg>
+            </button>
+            <input type="hidden" name="act" value="order">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+    
+ <!DOCTYPE html>
+ <html lang="es-MX">
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>Buscar Negocios &#8902; Tecnómata</title>
+     <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" id="main-style-css" href="{{ url_for('static', filename='css/main.min.css') }}" type="text/css" media="all">
+     <link rel="icon" href="{{ url_for('static', filename='img/cropped-favicon-32x32-tec.png') }}" sizes="32x32">
+ </head>
+ <body>
+     <div class="wrapper wrapper-main">
+         <main class="main">
+             {% include "components/header.html" %}
+ 
+             <!-- Buscador -->
+             <div class="search-container">
+                 <h1>Buscar tu Negocio</h1>
+                 <form id="searchForm">
+                     <input type="text" id="query" name="query" placeholder="Escribe el nombre de tu negocio" required>
+                     <button type="submit">Buscar</button>
+                 </form>
+                 <div id="results" class="search-results">
+                     <!-- Aquí se mostrarán los resultados -->
+                 </div>
+             </div>
+ 
+             {% include "components/footer.html" %}
+         </main>
+         {% include "components/modal-menu.html" %}
+     </div>
+ 
+     <script type="text/javascript" src="{{ url_for('static', filename='js/script.min.js') }}" id="main-script-js"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='js/business-search.js') }}"></script>
+ </body>
+ </html>
+ 
