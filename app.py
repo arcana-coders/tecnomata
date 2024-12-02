@@ -29,9 +29,9 @@ def home():
 def cases():
     return render_template('cases.html')
 
-@app.route("/contacto")
-def contacto():
-    return render_template("contact.html")
+@app.route("/costoweb")
+def costoweb():
+    return render_template("costoweb.html")
 
 @app.route("/send_form", methods=["POST"])
 def send_form():
